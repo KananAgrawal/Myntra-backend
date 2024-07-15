@@ -56,7 +56,7 @@ class User(AbstractBaseUser):
     country=models.CharField(max_length=50,null=True)
     social_media=models.URLField(blank=True, null=True)
     otp = models.CharField(max_length=6, blank=True, null=True)
-    isVerified=models.BooleanField(default=False)
+    isVerified=models.BooleanField(default=True)
     is_admin=models.BooleanField(default=False)
     is_active=models.BooleanField(default=True)
 
